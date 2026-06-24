@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WALLPAPER_ZONE.com</title>
+    <link rel="stylesheet" href="CSS/indexStyle.css">
+</head>
+
+<body>
+    
+    <!-- SIMULAÇÃO DOS TERMOS DE USO (MODAL) -->
+    <div id="modal-termos" style="position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background-color: rgba(0, 0, 0, 0.9); display: flex; justify-content: center; align-items: center; z-index: 9999;">
+        <div style="background-color: #1a1a1a; border: 1px solid rgba(255, 255, 255, 0.1); padding: 30px; border-radius: 8px; max-width: 450px; text-align: center; color: #ffffff; box-shadow: 0px 0px 20px rgba(0,0,0,0.8);">
+            <h3 style="margin-top: 0; color: #ffcc00; font-size: 20px;">Termos de Uso - WALLPAPER ZONE</h3>
+            <p style="font-size: 14px; line-height: 1.6; color: #cccccc; margin-bottom: 25px;">
+                Bem-vindo à galeria! Ao continuar e navegar no nosso site, concordas que todos os downloads de papéis de parede são gratuitos e destinados exclusivamente para uso pessoal.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 15px;">
+                <button onclick="aceitarTermos()" style="padding: 10px 20px; border: none; border-radius: 5px; font-size: 14px; cursor: pointer; font-weight: bold; background-color: #28a745; color: white;">Aceitar e Entrar</button>
+                <button onclick="recusarTermos()" style="padding: 10px 20px; border: none; border-radius: 5px; font-size: 14px; cursor: pointer; font-weight: bold; background-color: #dc3545; color: white;">Recusar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="conteudo01">
+        <h1 class="nome-brilhante">WALLPAPER_ZONE</h1>
+    </div>
+
+    <div id="conteudo02">
+        <h2>SISTEMA EM MANUTENÇÃO</h2>
+        
+        <p>Ainda estamos polindo os detalhes da nossa plataforma de personalização, mas sinta-se em casa!
+            <br>Status do Servidor: Café no bule, códigos alinhados e banco de dados carregando novos wallpapers.
+            <br>Assinado por: <span class="nome-brilhante">LUC4$_DURAN</span>
+        </p>
+        
+        <p>A Wallpaper Zone nasceu para ser o ponto de encontro de quem quer dar uma nova vida ao seu ecrã. 
+            Estamos a criar categorias que vão desde o estilo Retrô, Paisagens Místicas até o Cyberpunk Neon mais agressivo.
+        </p>
+        
+        <p id="disq">
+            Acesso público temporariamente limitado enquanto configuramos as permissões de administrador e uploads. ✍️(◔◡◔)
+        </p>
+        
+        <p>Por favor, não estrague o algoritmo do sistema! Volte em breve para conferir a galeria de alta resolução expandida.
+            <br>Desenvolvido de forma independente para a evolução da comunidade Web.
+        </p>
+        
+        <div class="botoes-boas-vindas">
+            <a href="pagPrincipal.html" class="button" id="visit">LOGIN VISITA</a>
+            <a href="cadastro.html" class="button" id="part">LOGIN PARTICIPANTE</a>
+        </div>
+    </div>
+
+    <!-- SCRIPT JAVASCRIPT PARA CONTROLAR O MODAL -->
+    <script>
+        function aceitarTermos() {
+            alert("😁 Obrigado por aceitares os termos! Desfruta dos melhores wallpapers.");
+            document.getElementById("modal-termos").style.display = "none";
+        }
+
+        function recusarTermos() {
+            alert("😥 Precisas de aceitar os termos de uso para navegar na galeria.");
+            window.location.href = "https://www.google.com";
+        }
+    </script>
+</body>
+</html>
