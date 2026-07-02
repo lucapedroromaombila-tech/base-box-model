@@ -1,15 +1,22 @@
 
-function opcao() {
-    var visit = document.getElementById("btnVisita");
-    var part = document.getElementById("btnParticipante");
+const dados={
+ emai:undefined,
+ senha: undefined,
+ base_dados: function(){
+    this.emai=toString(usuario.email);
+ }
 
-    if (visit == true) {
-        alert("ola");
-    }
-    if (part == true) {
-        alert("oi");
-    }
 }
 
-btnVisita.addEventListener("click", opcao);
-btnParticipante.addEventListener("click", opcao);
+function autenticacao(){
+
+    let email= document.getElementById("email").value;
+    let senha=document.getElementById(senha).value;
+
+    if(email===true && senha===true){
+        const api="https//email.google.com";
+        
+
+    }
+    
+}
