@@ -4,80 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wallpaper Zone - Paisagens</title>
+    <!-- Mantido o link para o CSS original -->
     <link rel="stylesheet" href="CSS/indexStyle.css">
 </head>
 <body>
     
-    <div id="conteudo01">
-        <img src="CSS/img/avatar.png" alt="Logo">
-        <h1 class="nome-brilhante">WALLPAPER_ZONE</h1>
-    </div>
+    <!-- ESTRUTURA MODERNA: Substituído div#header-site por <header> -->
+    <header id="header-site">
+        <!-- Mantidos IDs e Classes originais -->
+        <div id="conteudo01">
+            <img src="CSS/img/avatar.png" alt="Avatar do Usuário">
+            <h1 class="nome-brilhante">WALLPAPER_ZONE</h1>
+        </div>
+    </header>
 
-    <div>
+    <!-- ESTRUTURA MODERNA: Substituído div#menu-navegacao por <nav> -->
+    <nav id="menu-navegacao">
         <ul>
+            <!-- Mantidos links e classe buttonIn originais -->
             <li><a href="pagPrincipal.html" class="buttonIn">Inicio</a></li>
-             <li><a href="pagPraia.html" class="buttonIn">Por_Sol</a></li>
+            <li><a href="pagPraia.html" class="buttonIn">Por_Sol</a></li>
             <li><a href="pagAnimal.html" class="buttonIn">Animais</a></li>
             <li><a href="pagRomantico.html" class="buttonIn">Love</a></li>
             <li><a href="pagAfrica.html" class="buttonIn">Africa</a></li>
             <li><a href="#rodape-container" class="buttonIn">Contacto</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <div class="fotos">
-        <h2>Paisagens Impressionantes</h2>
-        
-        <div class="img">
-           <div class="foto">
-                <img src="CSS/img/paisagens/pexels-therato-6321128.jpg" alt="Wallpaper 1">
-                <div class="legenda">Neon Aurora</div>
-            </div>
-            <div class="foto">
-                <img src="CSS/img/paisagens/pexels-victorbarborsa-19180218.jpg " alt="Wallpaper 2">
-                <div class="legenda">Olhar do Orisonte</div>
-            </div>
-            <div class="foto">
-                <img src="CSS/img/paisagens/pexels-venelin-dimitrov-1873912-32154395.jpg" alt="Wallpaper 3">
-                <div class="legenda">Aurora Estrelar</div>
-            </div>
+    <!-- ESTRUTURA MODERNA: Envolvido o conteúdo principal com a tag <main> -->
+    <main>
+        <!-- ESTRUTURA MODERNA: Substituído div.fotos por <section> -->
+        <section id="galeria-paisagens" class="fotos">
+            <h2>Paisagens Impressionantes</h2>
+            
+            <!-- Mantido div.img original para o grid de fotos -->
+            <div class="img">
+                <!-- ESTRUTURA MODERNA: Substituído div.foto por <figure> (ideal para imagens com legenda) -->
+                <!-- Mantida a classe original foto no figure -->
+                <figure class="foto">
+                    <img src="CSS/img/paisagens/pexels-therato-6321128.jpg" alt="Neon Aurora">
+                    <!-- ESTRUTURA MODERNA: div.legenda substituída por <figcaption> -->
+                    <!-- Mantida a classe original legenda -->
+                    <figcaption class="legenda">Neon Aurora</figcaption>
+                </figure>
+                
+                <figure class="foto">
+                    <img src="CSS/img/paisagens/pexels-victorbarborsa-19180218.jpg" alt="Olhar do Orisonte">
+                    <figcaption class="legenda">Olhar do Orisonte</figcaption>
+                </figure>
+                
+                <figure class="foto">
+                    <img src="CSS/img/paisagens/pexels-venelin-dimitrov-1873912-32154395.jpg" alt="Aurora Estrelar">
+                    <figcaption class="legenda">Aurora Estrelar</figcaption>
+                </figure>
 
-            <div class="foto">
-                <img src="CSS/img/paisagens/pexels-renan-lima-1322164-3364026.jpg" alt="Wallpaper 4">
-                <div class="legenda">Abstrato Geométrico</div>
-            </div>
-            <div class="foto">
-                <img src="CSS/img/paisagens/pexels-paulofreitas-9988928.jpg" alt="Wallpaper 5">
-                <div class="legenda">Estrelar Dia</div>
-            </div>
-            <div class="foto">
-                <img src="CSS/img/paisagens/pexels-liuguangxi-16908858.jpg" alt="Wallpaper 6">
-                <div class="legenda">Deserto do Saára</div>
-            </div>
+                <figure class="foto">
+                    <img src="CSS/img/paisagens/pexels-renan-lima-1322164-3364026.jpg" alt="Abstrato Geométrico">
+                    <figcaption class="legenda">Abstrato Geométrico</figcaption>
+                </figure>
+                
+                <figure class="foto">
+                    <img src="CSS/img/paisagens/pexels-paulofreitas-9988928.jpg" alt="Estrelar Dia">
+                    <figcaption class="legenda">Estrelar Dia</figcaption>
+                </figure>
+                
+                <figure class="foto">
+                    <img src="CSS/img/paisagens/pexels-liuguangxi-16908858.jpg" alt="Deserto do Saára">
+                    <figcaption class="legenda">Deserto do Saára</figcaption>
+                </figure>
 
-            <div class="foto">
-                <img src="CSS/img/paisagens/pexels-lawlesscapture-13715315.jpg"  alt="Wallpaper 7">
-                <div class="legenda">Pôr do Sol Gold</div>
-            </div>
-            <div class="foto">
-                <img src="CSS/img/paisagens/pexels-kassiamelox-14659543.jpg" alt="Wallpaper 8">
-                <div class="legenda">Estrelar Noite</div>
-            </div>
-            <div class="foto">
-                <img src="CSS/img/paisagens/pexels-yunustug-14515367.jpg"alt="Lucas Escola">
-                <div class="legenda">Caminho da vida</div>
-            </div>
-        </div>
-    </div>
+                <figure class="foto">
+                    <img src="CSS/img/paisagens/pexels-lawlesscapture-13715315.jpg" alt="Pôr do Sol Gold">
+                    <figcaption class="legenda">Pôr do Sol Gold</figcaption>
+                </figure>
+                
+                <figure class="foto">
+                    <img src="CSS/img/paisagens/pexels-kassiamelox-14659543.jpg" alt="Estrelar Noite">
+                    <figcaption class="legenda">Estrelar Noite</figcaption>
+                </figure>
+                
+                <figure class="foto">
+                    <img src="CSS/img/paisagens/pexels-yunustug-14515367.jpg" alt="Caminho da vida">
+                    <figcaption class="legenda">Caminho da vida</figcaption>
+                </figure>
+            </div> <!-- fim div.img -->
+        </section> <!-- fim section#galeria-paisagens -->
+    </main>
 
-    <div id="rodape-container">
+    <!-- ESTRUTURA MODERNA: Substituído div#rodape-container por <footer> -->
+    <footer id="rodape-container">
+        <!-- Mantidos IDs e Classes originais -->
         <div class="rodape-conteudo">
             <div class="rodape-bloco">
                 <h3>Redes Sociais</h3>
                 <div class="rodape-redes">
-                    <a href="https://wa.me/244952850762" target="_blank">WhatsApp</a>
-                    <a href="https://facebook.com" target="_blank">Facebook</a>
-                    <a href="https://instagram.com" target="_blank">Instagram</a>
-                    <a href="https://github.com" target="_blank">GitHub</a>
+                    <a href="https://wa.me/244952850762" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
             </div>
             <div class="rodape-bloco">
@@ -89,7 +113,7 @@
             <p>© 2026 WALLPAPER_ZONE. Todos os direitos reservados.</p>
             <p>Desenvolvido por: <span class="nome-brilhante">LUC4$_DURAN</span></p>
         </div>
-    </div>
+    </footer>
 
 </body>
 </html>

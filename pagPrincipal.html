@@ -4,93 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <link rel="stylesheet" href="CSS/indexStyle.css">
     <title>WALLPAPER_ZONE.pricipal</title>
 </head>
 
 <body>
     
-
-    <div id="header-container">
+    <!-- ESTRUTURA MODERNA: Substituído div#header-container por <header> -->
+    <header id="header-container">
         <div id="conteudo01">
-            <img src="CSS/img/avatar.png">
+            <img src="CSS/img/avatar.png" alt="Avatar do Usuário">
+            <!-- Mantido ID e Classe originais -->
             <h1 class="nome-brilhante">WALLPAPER_ZONE</h1>
         </div>
-    </div>
+        <nav id="menu-navegacao">
+            <ul>
+                <!-- Mantidos links e classe buttonIn originais -->
+                <li><a href="pagPraia.html" class="buttonIn">Por_Sol</a></li>
+                <li><a href="pagAnimal.html" class="buttonIn">Animais</a></li>
+                <li><a href="pagPaisagens.html" class="buttonIn">Paisagens</a></li>
+                <li><a href="pagRomantico.html" class="buttonIn">Love</a></li>
+                <li><a href="pagAfrica.html" class="buttonIn">Africa</a></li>
+                <li><a href="https://www.google.com" class="buttonIn">sair</a></li>
+            </ul>
+        </nav>
 
-    <div>
-        <ul>
-            <li><a href="pagPraia.html" class="buttonIn">Por_Sol</a></li>
-            <li><a href="pagAnimal.html" class="buttonIn">Animais</a></li>
-            <li><a href="pagPaisagens.html" class="buttonIn">Paisagens</a></li>
-            <li><a href="pagRomantico.html" class="buttonIn">Love</a></li>
-            <li><a href="pagAfrica.html" class="buttonIn">Africa</a></li>
-            <li><a href="https://www.google.com" class="buttonIn">sair</a></li>
-        </ul>
-    </div>
+    </header>
 
-    <div id="nav-container"></div>
+    <!-- ESTRUTURA MODERNA: Envolvido o conteúdo principal com a tag <main> -->
+    <main>
+        <!-- ESTRUTURA MODERNA: Substituído div.fotos por <section> -->
+        <section class="fotos">
+            <h2>destaque da semana</h2>
+            
+            <!-- Mantido div.img original para o grid de fotos -->
+            <div class="img">
 
-    <div class="fotos">
-        <h2>destaque da semana</h2>
-        <div class="img">
+                <!-- ESTRUTURA MODERNA: Substituído div.foto por <figure> (ideal para imagens com legenda) -->
+                <!-- Mantida a classe original foto no figure -->
+                <figure class="foto">
+                    <img src="CSS/img/pexels-solomon-onyeagoro-1030566678-30007516.jpg" alt="Wallpaper 1">
+                    <!-- ESTRUTURA MODERNA: div.legenda substituída por <figcaption> -->
+                    <!-- Mantida a classe original legenda -->
+                    <figcaption class="legenda">Africane Woman</figcaption>
+                </figure>
 
-            <div class="foto">
-                <img src="CSS/img/pexels-solomon-onyeagoro-1030566678-30007516.jpg" alt="Wallpaper 1">
-                <div class="legenda">Africane Woman</div>
-            </div>
+                <figure class="foto">
+                    <img src="CSS/img/pexels-gsn-travel-28359737.jpg" alt="Wallpaper 3">
+                    <figcaption class="legenda">Gruta Profunda</figcaption>
+                </figure>
 
-            <div class="foto">
-                <img src="CSS/img/pexels-gsn-travel-28359737.jpg" alt="Wallpaper 3">
-                <div class="legenda">Gruta Profunda</div>
-            </div>
+                <figure class="foto">
+                    <img src="CSS/img/pexels-santesson89-37943692.jpg" alt="Wallpaper 2">
+                    <figcaption class="legenda">Montanhas Névoa</figcaption>
+                </figure>
 
-            <div class="foto">
-                <img src="CSS/img/pexels-santesson89-37943692.jpg" alt="Wallpaper 2">
-                <div class="legenda">Montanhas Névoa</div>
-            </div>
+                <figure class="foto">
+                    <img src="CSS/img/animais/pexels-anna-shakhrai-129681881-17578529.jpg" alt="Wallpaper 4">
+                    <figcaption class="legenda">Soneca</figcaption>
+                </figure>
 
-            <div class="foto">
-                <img src="CSS/img/animais/pexels-anna-shakhrai-129681881-17578529.jpg" alt="Wallpaper 4">
-                <div class="legenda">Soneca</div>
-            </div>
-            <div class="foto">
-                <img src="CSS/img/pexels-chuck-15502054.jpg" alt="Wallpaper 5">
-                <div class="legenda">Cenário Urbano</div>
-            </div>
-            <div class="foto">
-                <img src="CSS/img/paisagens/pexels-yunustug-14515367.jpg" alt="Wallpaper 6">
-                <div class="legenda">Floresta Mística</div>
-            </div>
+                <figure class="foto">
+                    <img src="CSS/img/pexels-chuck-15502054.jpg" alt="Wallpaper 5">
+                    <figcaption class="legenda">Cenário Urbano</figcaption>
+                </figure>
 
-            <div class="foto">
-                <img src="CSS/img/pexels-feda-2162088704-38012587.jpg"
-                    alt="Wallpaper 7">
-                <div class="legenda">Amizade Linda</div>
-            </div>
-            <div class="foto">
-                <img src="CSS/img/pexels-abuti-engidashet-2941405-20600866.jpg" alt="Wallpaper 8">
-                <div class="legenda">model Lucas Duran</div>
-            </div>
-            <div class="foto">
-                <img src="CSS/img/love/pexels-nietjuhart-776636.jpg"
-                    alt="Lucas Escola">
-                <div class="legenda">Diario da vida</div>
-            </div>
+                <figure class="foto">
+                    <img src="CSS/img/paisagens/pexels-yunustug-14515367.jpg" alt="Wallpaper 6">
+                    <figcaption class="legenda">Floresta Mística</figcaption>
+                </figure>
 
-        </div>
-    </div>
+                <figure class="foto">
+                    <img src="CSS/img/pexels-feda-2162088704-38012587.jpg" alt="Wallpaper 7">
+                    <figcaption class="legenda">Amizade Linda</figcaption>
+                </figure>
 
-    <div id="rodape-container">
+                <figure class="foto">
+                    <img src="CSS/img/pexels-abuti-engidashet-2941405-20600866.jpg" alt="Wallpaper 8">
+                    <figcaption class="legenda">model Lucas Duran</figcaption>
+                </figure>
+
+                <figure class="foto">
+                    <img src="CSS/img/love/pexels-nietjuhart-776636.jpg" alt="Lucas Escola">
+                    <figcaption class="legenda">Diario da vida</figcaption>
+                </figure>
+
+            </div> <!-- fim div.img -->
+        </section> <!-- fim section.fotos -->
+    </main>
+
+    <!-- ESTRUTURA MODERNA: Substituído div#rodape-container por <footer> -->
+    <footer id="rodape-container">
+        <!-- Mantidos IDs e Classes originais -->
         <div class="rodape-conteudo">
             <div class="rodape-bloco">
                 <h3>Redes Sociais</h3>
                 <div class="rodape-redes">
-                    <a href="https://wa.me/244952850762" target="_blank">WhatsApp</a>
-                    
-                    <a href="https://facebook.com/244921110733" target="_blank">Facebook</a>
-                    <a href="https://instagram.com" target="_blank">Instagram</a>
-                    <a href="https://github.com" target="_blank">GitHub</a>
+                    <a href="https://wa.me/244952850762" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    <a href="https://facebook.com/244921110733" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
                 </div>
             </div>
             <div class="rodape-bloco">
@@ -102,7 +116,7 @@
             <p>© 2026 WALLPAPER_ZONE. Todos os direitos reservados.</p>
             <p>Desenvolvido por: <span class="nome-brilhante">LUC4$_DURAN</span></p>
         </div>
-    </div>
+    </footer>
 
 </body>
 
