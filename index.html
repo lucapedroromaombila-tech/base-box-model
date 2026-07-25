@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
- 
        
 </head>
 
@@ -29,13 +28,11 @@
 
     <header>
         <div class="logo">
-            <!-- Certifique-se de que este caminho está correto -->
             <img src="CSS/img/avatar.png" alt="Wallpaper Zone Logo">
             <h1>WALLPAPER<span>_ZONE</span></h1>
         </div>
     </header>
 
-    <!-- Conteúdo Principal -->
     <main>
         <div id="container_manutencao">
             <h2>SISTEMA EM MANUTENÇÃO</h2>
@@ -56,7 +53,7 @@
             <p>Por favor, não estrague o algoritmo do sistema! Volte em breve para conferir a galeria de alta resolução expandida.<br>Desenvolvido de forma independente para a evolução da comunidade Web.</p>
             
             <div class="area-botoes">
-                <a href="pagPrincipal.html" class="btn-principal">LOGIN VISITA</a>
+                <a href="indexPima.html" class="btn-principal">LOGIN VISITA</a>
             </div>
         </div>
     </main>
@@ -65,21 +62,6 @@
         &copy; 2026 WALLPAPER_ZONE.com - Todos os direitos reservados para uso pessoal.
     </footer>
 
-    <!-- Scripts -->
-    <script>
-        function aceitarTermos() {
-
-            const overlay = document.getElementById("termos-overlay");
-            overlay.style.opacity = '0';
-            setTimeout(() => {
-                overlay.style.display = "none";
-            }, 300); // Espera a transição de opacidade acabar
-        }
-
-        function recusarTermos() {
-            alert("😥 Precisas de aceitar os termos de uso para navegar na galeria.");
-            window.location.href = "https://www.google.com";
-        }
-    </script>
+    <script src="JS/script.js"></script>
 </body>
 </html>

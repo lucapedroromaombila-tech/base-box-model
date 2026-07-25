@@ -1,22 +1,13 @@
+function aceitarTermos() {
 
-const dados={
- emai:undefined,
- senha: undefined,
- base_dados: function(){
-    this.emai=toString(usuario.email);
- }
-
+    const overlay = document.getElementById("termos-overlay");
+    overlay.style.opacity = '0';
+    setTimeout(() => {
+        overlay.style.display = "none";
+    }, 300);
 }
 
-function autenticacao(){
-
-    let email= document.getElementById("email").value;
-    let senha=document.getElementById(senha).value;
-
-    if(email===true && senha===true){
-        const api="https//email.google.com";
-        
-
-    }
-    
+function recusarTermos() {
+    //alert("😥 Precisas de aceitar os termos de uso para navegar na galeria.");
+    window.location.href = "https://www.google.com";
 }

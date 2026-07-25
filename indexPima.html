@@ -4,49 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
     <link rel="stylesheet" href="CSS/indexStyle.css">
     <title>WALLPAPER_ZONE.pricipal</title>
+    
 </head>
 
 <body>
     
-    <!-- ESTRUTURA MODERNA: Substituído div#header-container por <header> -->
     <header id="header-container">
         <div id="conteudo01">
             <img src="CSS/img/avatar.png" alt="Avatar do Usuário">
-            <!-- Mantido ID e Classe originais -->
             <h1 class="nome-brilhante">WALLPAPER_ZONE</h1>
         </div>
         <nav id="menu-navegacao">
             <ul>
-                <!-- Mantidos links e classe buttonIn originais -->
                 <li><a href="pagPraia.html" class="buttonIn">Por_Sol</a></li>
                 <li><a href="pagAnimal.html" class="buttonIn">Animais</a></li>
                 <li><a href="pagPaisagens.html" class="buttonIn">Paisagens</a></li>
                 <li><a href="pagRomantico.html" class="buttonIn">Love</a></li>
                 <li><a href="pagAfrica.html" class="buttonIn">Africa</a></li>
-                <li><a href="https://www.google.com" class="buttonIn">sair</a></li>
+               <!-- <li><a href="https://www.google.com" class="buttonIn">sair</a></li>  -->
             </ul>
         </nav>
-
     </header>
 
-    <!-- ESTRUTURA MODERNA: Envolvido o conteúdo principal com a tag <main> -->
     <main>
-        <!-- ESTRUTURA MODERNA: Substituído div.fotos por <section> -->
         <section class="fotos">
             <h2>destaque da semana</h2>
-            
-            <!-- Mantido div.img original para o grid de fotos -->
-            <div class="img">
 
-                <!-- ESTRUTURA MODERNA: Substituído div.foto por <figure> (ideal para imagens com legenda) -->
-                <!-- Mantida a classe original foto no figure -->
+            <div class="img">
                 <figure class="foto">
                     <img src="CSS/img/pexels-solomon-onyeagoro-1030566678-30007516.jpg" alt="Wallpaper 1">
-                    <!-- ESTRUTURA MODERNA: div.legenda substituída por <figcaption> -->
-                    <!-- Mantida a classe original legenda -->
                     <figcaption class="legenda">Africane Woman</figcaption>
                 </figure>
 
@@ -90,13 +78,11 @@
                     <figcaption class="legenda">Diario da vida</figcaption>
                 </figure>
 
-            </div> <!-- fim div.img -->
-        </section> <!-- fim section.fotos -->
+            </div> 
+        </section> 
     </main>
 
-    <!-- ESTRUTURA MODERNA: Substituído div#rodape-container por <footer> -->
     <footer id="rodape-container">
-        <!-- Mantidos IDs e Classes originais -->
         <div class="rodape-conteudo">
             <div class="rodape-bloco">
                 <h3>Redes Sociais</h3>
@@ -108,7 +94,7 @@
                 </div>
             </div>
             <div class="rodape-bloco">
-                <h3>Wallpaper Zone</h3>
+                <h3><a href="#menu-navegacao">Wallpaper Zone</a></h3>
                 <p>A sua galeria digital de papéis de parede em alta resolução.</p>
             </div>
         </div>
@@ -119,5 +105,4 @@
     </footer>
 
 </body>
-
 </html>
