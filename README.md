@@ -1,4 +1,4 @@
-# 🏙️ wallpapers - Galeria de Personalizada
+# 🏙️ wallpapers - Galeria Personalizada
 
 Este é um projeto de desenvolvimento web focado na exploração de layouts estruturados, aplicando conceitos fundamentais de
 CSS (como o flex-box) para criar uma experiência visual rica e organizada. 
